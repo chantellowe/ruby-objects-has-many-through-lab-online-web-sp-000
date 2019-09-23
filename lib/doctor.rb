@@ -22,7 +22,7 @@ class Doctor
   end
   
   def new_appointment(date, patient)
-    @appointments << appointments
+    Appointment.new(date, patient, self)
   end
   
   #binding.pry
