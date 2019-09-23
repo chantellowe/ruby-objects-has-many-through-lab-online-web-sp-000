@@ -21,7 +21,7 @@ class Doctor
     end
   end
   
-  def new_appointment
+  def new_appointment(date, patient)
     @appointments << appointments
   end
   
