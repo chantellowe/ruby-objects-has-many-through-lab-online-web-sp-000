@@ -4,6 +4,7 @@ class Doctor
   attr_accessor :name, :appointment, :patient
   
   @@all = []
+  @appointments = []
   
   def initialize(name)
     @name = name
@@ -21,9 +22,10 @@ class Doctor
   end
   
   def new_appointment
-    
+    @appointments << appointments
   end
-  binding.pry
+  
+  #binding.pry
   def patients
   
     appointments.map do |appointment|
